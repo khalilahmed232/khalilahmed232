@@ -1,0 +1,56 @@
+<div class="oj-flex">
+    <div class="oj-flex-item oj-sm-12 ">
+        <h5>Table view</h5>
+        <oj-table class="custom-table" scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+            data="[[ employeeListADP ]]" columns='[{"headerText":"Id","field":"id"},{"headerText":"Employee Number","field":"empNumber"},{"headerText":"Employee Name","field":"empName"},
+        {"headerText":"Department Name","field":"departmentNumber"}]'>
+
+        </oj-table>
+
+
+        <h5>Using oj-bind-for-each</h5>
+        <div class="oj-flex oj-sm-align-self-center">
+
+            <oj-bind-for-each data="[[ employeeListADP ]]">
+
+                <template>
+                    <div class="oj-flex oj-flex-item  user-div oj-sm-margin-2x">
+                        <div class="user-profile-pic oj-sm-flex-direction-column oj-flex oj-sm-align-items-center">
+                            <div class="user-name-initial oj-flex-item">
+                                <oj-bind-text value="[[ $current.data.empName[0] ]]"></oj-bind-text>
+                            </div>
+                        </div>
+                        <div class="oj-flex oj-sm-flex-direction-column oj-sm-align-self-center">
+                            <div class="user-name">
+                                <oj-bind-text value="[[ $current.data.empName ]]"></oj-bind-text>
+                            </div>
+                            <div class="user-number">
+                                <oj-bind-text value="[[ $current.data.empNumber ]]"></oj-bind-text>
+                            </div>
+                            <div class="user-id">
+                                <oj-bind-text value="[[ $current.data.departmentNumber ]]"></oj-bind-text>
+                            </div>
+                            <div class="oj-indexer-ellipsis"></div>
+                        </div>
+                    </div>
+                </template>
+
+            </oj-bind-for-each>
+        </div>
+
+        <h5>Using Data grid</h5>
+        <oj-data-grid 
+            id="datagrid" 
+            style="width:100%;height:400px"
+            aria-label="My Data Grid"
+            data='{{ employeeListADP }}'
+            header.column.style="[[ headerColStyle ]]"
+            header.column.class-name="oj-sm-justify-content-center"
+            class="oj-lg-justify-content-center"
+            >
+
+
+        </oj-data-grid>
+
+    </div>
+</div>

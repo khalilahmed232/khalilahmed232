@@ -1,0 +1,17 @@
+<div class="oj-flex">
+    <div class="oj-flex-item oj-sm-12 ">
+        <h5>Without additional css</h5>
+        <oj-table class="custom-table"  scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+        data="[[ employeeListADP ]]" columns='[{"headerText":"Id","field":"id"},{"headerText":"Employee Number","field":"empNumber"},{"headerText":"Employee Name","field":"empName"},
+        {"headerText":"Department Name","field":"departmentNumber"}]'>
+        
+        </oj-table>
+        
+        
+        <h5>With added css</h5>
+        <oj-table class="custom-table"  id="employeetable" scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12 "
+        data="[[ employeeListADP ]]" columns='[{"headerText":"Id","field":"id"},{"headerText":"Employee Number","field":"empNumber"},{"headerText":"Employee Name","field":"empName"},
+        {"headerText":"Department Name","field":"departmentNumber"}]'>
+        </oj-table>        
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="oj-flex">
+    <div class="oj-flex-item oj-sm-12 ">
+        <h5>Table with some long text</h5>
+        <oj-table class="custom-table" id="employeetable" scroll-policy="loadMoreOnScroll"
+            class="oj-flex-item oj-sm-12 oj-md-12" data="[[ employeeListADP ]]" columns='[
+            {"headerText":"Id","field":"id"},
+            {"headerText":"Employee Number","field":"empNumber"},
+            {"headerText":"Employee Name","field":"empName"},
+            {"headerText":"Department Name","field":"departmentNumber"},
+            {"headerText":"Address","field":"address"},
+            {"headerText":"Address line","field":"addressLine2"}
+            ]'>
+
+            <template slot="rowTemplate" data-oj-as="row">
+                <tr style="color:red;">
+                    <td>
+                        <oj-bind-text value="[[row.data.id]]"></oj-bind-text>
+                    </td>
+                    <td>
+                        <oj-bind-text value="[[row.data.empNumber]]"></oj-bind-text>
+                    </td>
+                    <td>
+                        <oj-bind-text value="[[row.data.empName]]"></oj-bind-text>
+                    </td>
+                    <td>
+                        <oj-bind-text value="[[row.data.address]]"></oj-bind-text>
+                    </td>
+                    <td>
+                        <oj-bind-text value="[[row.data.addressLine2]]"></oj-bind-text>
+                    </td>
+                </tr>
+            </template>
+
+        </oj-table>
+
+        <h5>Table with added width to Address column</h5>
+        <oj-table class="custom-table" id="employeetable" scroll-policy="loadMoreOnScroll"
+            class="oj-flex-item oj-sm-12 oj-md-12" data="[[ employeeListADP ]]" columns='[
+            {"headerText":"Id","field":"id"},
+            {"headerText":"Employee Number","field":"empNumber"},
+            {"headerText":"Employee Name","field":"empName"},
+            {"headerText":"Department Name","field":"departmentNumber"},
+            {"headerText":"Address","field":"address","style": "max-width:200px"},
+            {"headerText":"Address line","field":"addressLine2"}
+            ]'>
+        </oj-table>
+
+        <h5>Table with added width to Address column</h5>
+        <oj-table class="custom-table" id="employeetable" scroll-policy="loadMoreOnScroll"
+            class="oj-flex-item oj-sm-12 oj-md-12" data="[[ employeeListADP ]]" columns='[
+            {"headerText":"Id","field":"id"},
+            {"headerText":"Employee Number","field":"empNumber"},
+            {"headerText":"Employee Name","field":"empName"},
+            {"headerText":"Department Name","field":"departmentNumber"},
+            {"headerText":"Address","field":"address","className": "oj-helper-overflow-wrap-anywhere oj-helper-white-space-normal"},
+            {"headerText":"Address line","field":"addressLine2"}
+            ]'>
+        </oj-table>
+
+
+    </div>
+</div>

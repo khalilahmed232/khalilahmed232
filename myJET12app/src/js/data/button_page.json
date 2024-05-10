@@ -1,0 +1,54 @@
+{
+    "buttonDataItems": [
+        {
+            "id": 1,
+            "heading": "Simple Button",
+            "sourceCode": "<oj-button label='Download' >\n</oj-button>"
+        },
+        {
+            "id": 2,
+            "heading": " Code for button with icon",
+            "sourceCode": "<oj-button label='Download' >\n    <span class='oj-ux-ico-download' slot='startIcon'></span>\n</oj-button>"
+        },
+        {
+            "id": 3,
+            "heading": " Toolbar buttons Add row, Edit Row, Delete Row buttons ( generally used above a table or for each loop )",
+            "sourceCode": "<div class='oj-flex'>\n  <oj-toolbar chroming='solid' class='oj-flex-item oj-sm-12 oj-md-12'>\n    <oj-button label='Add' class='oj-button-sm'>\n      <span class='oj-ux-ico-plus' slot='startIcon'></span>\n    </oj-button>\n    <oj-button label='Edit' class='oj-button-sm'>\n      <span class='oj-ux-ico-edit' slot='startIcon'></span>\n    </oj-button>\n    <oj-button label='Delete' class='oj-button-sm'>\n      <span class='oj-ux-ico-trash' slot='startIcon'></span>\n    </oj-button>\n  </oj-toolbar>\n</div>"
+        },
+        {
+            "id": 4,
+            "heading": "Save and cancel button in dialog box",
+            "sourceCode": "<oj-button label='Click to show Save dialog' class='oj-button-sm' on-oj-action='[[clickListener1]]'>\n    <span class='oj-ux-ico-view' slot='startIcon'></span>\n</oj-button>\n\n<oj-dialog dialog-title='Dialog' id='save-cancel-dialog'>\n    <div slot='body'>\n        <div class='oj-flex'>\n            <div class='oj-flex-item oj-sm-12 oj-md-12'>\n                <oj-form-layout>\n                    <oj-input-text label-hint='Text'></oj-input-text>\n                </oj-form-layout>\n            </div>\n        </div>\n    </div>\n    <div slot='footer'>\n        <oj-button label='Save' class='oj-button-sm' on-oj-action='[[clickListener2]]' chroming='callToAction'>\n            <span class='oj-ux-ico-save' slot='startIcon'></span>\n        </oj-button>\n        <oj-button label='Cancel' class='oj-button-sm' on-oj-action='[[clickListener2]]'>\n            <span class='oj-ux-ico-close' slot='startIcon'></span>\n        </oj-button>\n    </div>\n</oj-dialog>"
+        },
+        {
+            "id": 5,
+            "heading": "Close button ( for message only dialog box )",
+            "sourceCode": "<oj-button label='Click to show message dialog' class='oj-button-sm' on-oj-action='[[clickListener3]]'>\n    <span class='oj-ux-ico-view' slot='startIcon'></span>\n</oj-button>\n\n<oj-dialog dialog-title='Dialog' id='message-dialog'>\n    <div slot='body'>\n        <div class='oj-flex'>\n            <div class='oj-flex-item oj-sm-12 oj-md-12'>\n                Form Submitted successfully.\n            </div>\n        </div>\n    </div>\n    <div slot='footer'>\n        <oj-button label='Close' class='oj-button-sm' on-oj-action='[[clickListener4]]'>\n            <span class='oj-ux-ico-close' slot='startIcon'></span>\n        </oj-button>\n    </div>\n</oj-dialog>"
+        },
+        {
+            "id": 6,
+            "heading": "Inline action items of table ( to provide inline edit or inline delete or to view more details )",
+            "sourceCode": "<div class='oj-flex'>\n    <oj-table scroll-policy='loadMoreOnScroll' class='oj-flex-item oj-sm-12 oj-md-12'\n        data='[[ employeeListADP ]]'\n        columns='[{'headerText':'Id','field':'id'},{'headerText':'empNumber','field':'empNumber'}\n,{'headerText':'empName','field':'empName'},{'headerText':'Action','field':'','template':'Action'}]'>\n        <template slot='Action'>\n            <oj-button label='Edit' class='oj-button-sm'>\n                <span class='oj-ux-ico-edit' slot='startIcon'></span>\n            </oj-button>\n            <oj-button label='Delete' class='oj-button-sm'>\n                <span class='oj-ux-ico-trash' slot='startIcon'></span>\n            </oj-button>\n        </template>\n    </oj-table>\n</div>"
+        },
+        {
+            "id": 7,
+            "heading": "For inline navigation to a different page give link instead of button ",
+            "sourceCode": "<div class='oj-flex'>\n    <oj-table scroll-policy='loadMoreOnScroll' class='oj-flex-item oj-sm-12 oj-md-12'\n        data='[[ employeeListADP ]]' columns='[{'headerText':'Id','field':'id'},{'headerText':'empNumber','field':'empNumber'}\n,{'headerText':'empName','field':'empName'},\n        {'headerText':'departmentNumber','field':'departmentNumber','template':'Action'}]'>\n        <template slot='Action'>\n            <a target='_blank' class='oj-link'>\n                <oj-bind-text value='[[$current.row.departmentNumber]]'></oj-bind-text>\n            </a>\n        </template>\n    </oj-table>\n</div>"
+        },
+        {
+            "id": 8,
+            "heading": "In Form Save Cancel buttons ( Don't give reset here ) as forms could be long and accidently clicking will remove all data ",
+            "sourceCode": "<div class='oj-flex'>\n  <div class='oj-flex-item oj-sm-12 oj-md-4'>\n    <oj-form-layout class='oj-formlayout-full-width' direction='row' label-edge='inside' columns='2'   label-width='45%' user-assistance-density='compact'>\n      <oj-label-value colspan='2' label-edge='start'>\n        <oj-label for='name-input' slot='label'>Name</oj-label>\n        <oj-input-text id='name-input' slot='value' ></oj-input-text>\n      </oj-label-value>\n      <oj-label-value colspan='2' label-edge='start'>\n        <oj-label for='city-input' slot='label'>City</oj-label>\n        <oj-input-text id='city-input' slot='value' '></oj-input-text>\n      </oj-label-value>\n      <oj-button label='Save' class='oj-button-sm oj-button-full-width'>\n        <span class='oj-ux-ico-save' slot='startIcon'></span>\n      </oj-button>\n      <oj-button label='Cancel' class='oj-button-sm oj-button-full-width'>\n        <span class='oj-ux-ico-close' slot='startIcon'></span>\n      </oj-button>\n    </oj-form-layout>\n  </div>\n</div>"
+        },
+        {
+            "id": 9,
+            "heading": "In Search ( Search, Reset, Cancel ) ( Reset should reset the form to how it is shown on page load )",
+            "sourceCode": "<div class='oj-flex'>\n  <div class='oj-flex-item oj-sm-12 oj-md-4'>\n    <oj-form-layout class='oj-formlayout-full-width' direction='row' label-edge='inside'\n      user-assistance-density='compact'>\n      <oj-label-value label-edge='start' label-width='35%'>\n        <oj-label for='name-input' slot='label'>Name</oj-label>\n        <oj-input-text id='name-input' slot='value'></oj-input-text>\n      </oj-label-value>\n      <oj-label-value label-edge='start' label-width='35%'>\n        <oj-label for='city-input' slot='label'>City\n        </oj-label>\n        <oj-input-text id='city-input' slot='value' '></oj-input-text>\n      </oj-label-value>\n      <oj-button label=' Search' class='oj-button-sm' chroming='callToAction'>\n        <span class='oj-ux-ico-search' slot='startIcon'></span>\n      </oj-button>\n      <oj-button label='Reset' class='oj-button-sm'>\n        <span class='oj-ux-ico-reset-variable' slot='startIcon'></span>\n      </oj-button>\n    </oj-form-layout>\n  </div>\n</div>"
+        },
+        {
+            "id": 9,
+            "heading": "Commonly used buttons and icons ",
+            "sourceCode": "Download - <span class='oj-ux-ico-download' ></span><br>\nSubmit -  <span class='oj-ux-ico-check' ></span><br>\nSave  -  <span class='oj-ux-ico-save' ></span><br>\nReset  -  <span class='oj-ux-ico-reset-variable' ></span><br>\nClear -  <span class='oj-ux-ico-close' ></span><br>\nAdd  -  <span class='oj-ux-ico-plus' ></span><br>\nEdit  -  <span class='oj-ux-ico-edit' ></span><br>\nDelete -  <span class='oj-ux-ico-trash' ></span><br>\nUpload -  <span class='oj-ux-ico-upload' ></span><br>\nView -  <span class='oj-ux-ico-view' ></span><br>"
+        }
+    ]
+}

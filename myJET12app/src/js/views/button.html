@@ -1,0 +1,430 @@
+<div class="oj-sm-padding-0 oj-md-padding-4x">
+    <h4>Buttons sample code</h4>    
+    <section class="code-preview-section 
+    oj-sm-padding-4x-horizontal 
+    oj-sm-padding-4x-top 
+    oj-sm-margin-0"
+    >
+        <p class="heading">
+            Button is element for user to interact. On button click we can call some rest API or show some message.
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-0">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-0">
+                <oj-button label="Download">
+                </oj-button>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            Code for button with icon
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-1">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-1">
+
+                <oj-button label="Download">
+                    <span class="oj-ux-ico-download" slot="startIcon"></span>
+                </oj-button>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            Toolbar buttons Add row, Edit Row, Delete Row buttons ( generally used above a table or for each loop )
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-2">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-2">
+                <div class="oj-flex">
+                    <oj-toolbar chroming="solid" class="oj-flex-item oj-sm-12 oj-md-12">
+                        <oj-button label="Add" class="oj-button-sm">
+                            <span class="oj-ux-ico-plus" slot="startIcon"></span>
+                        </oj-button>
+                        <oj-button label="Edit" class="oj-button-sm">
+                            <span class="oj-ux-ico-edit" slot="startIcon"></span>
+                        </oj-button>
+                        <oj-button label="Delete" class="oj-button-sm">
+                            <span class="oj-ux-ico-trash" slot="startIcon"></span>
+                        </oj-button>
+                    </oj-toolbar>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            Save and cancel button in dialog box
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-3">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-3">
+                <oj-button label='Click to show Save dialog' class='oj-button-sm' on-oj-action='[[clickListener1]]'>
+                    <span class='oj-ux-ico-view' slot='startIcon'></span>
+                </oj-button>
+
+                <oj-dialog dialog-title='Dialog' id='save-cancel-dialog'    position.my.vertical="center"
+                position.my.horizontal="center"
+                position.at.vertical="center"
+                position.at.horizontal="center"  >
+                    <div slot='body'>
+                        <div class='oj-flex'>
+                            <div class='oj-flex-item oj-sm-12 oj-md-12'>
+                                <oj-form-layout>
+                                    <oj-input-text label-hint='Text'></oj-input-text>
+                                </oj-form-layout>
+                            </div>
+                        </div>
+                    </div>
+                    <div slot='footer'>
+                        <oj-button label='Save' class='oj-button-sm' on-oj-action='[[clickListener2]]'
+                            chroming='callToAction'>
+                            <span class='oj-ux-ico-save' slot='startIcon'></span>
+                        </oj-button>
+                        <oj-button label='Cancel' class='oj-button-sm' on-oj-action='[[clickListener2]]'>
+                            <span class='oj-ux-ico-close' slot='startIcon'></span>
+                        </oj-button>
+                    </div>
+                </oj-dialog>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            Close button ( for message only dialog box )
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-4">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-4">
+                <oj-button label='Click to show message dialog' class='oj-button-sm' on-oj-action='[[clickListener3]]'>
+                    <span class='oj-ux-ico-view' slot='startIcon'></span>
+                </oj-button>
+
+                <oj-dialog dialog-title='Dialog' id='message-dialog'    position.my.vertical="center"
+                position.my.horizontal="center"
+                position.at.vertical="center"
+                position.at.horizontal="center"  >
+                    <div slot='body'>
+                        <div class='oj-flex'>
+                            <div class='oj-flex-item oj-sm-12 oj-md-12'>
+                                Form Submitted successfully.
+                            </div>
+                        </div>
+                    </div>
+                    <div slot='footer'>
+                        <oj-button label='Close' class='oj-button-sm' on-oj-action='[[clickListener4]]'>
+                            <span class='oj-ux-ico-close' slot='startIcon'></span>
+                        </oj-button>
+                    </div>
+                </oj-dialog>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            Inline action items of table ( to provide inline edit or inline delete or to view more details )
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-5">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-5">
+                <div class="oj-flex">
+                    <oj-table  scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+                        data="[[ employeeListADP ]]"
+                        columns='[{"headerText":"Id","field":"id"},{"headerText":"empNumber","field":"empNumber"},{"headerText":"empName","field":"empName"},{"headerText":"Action","field":"","template":"Action"}]'>
+                        <template slot="Action">
+                            <oj-button label="Edit" class="oj-button-sm">
+                                <span class="oj-ux-ico-edit" slot="startIcon"></span>
+                            </oj-button>
+                            <oj-button label="Delete" class="oj-button-sm">
+                                <span class="oj-ux-ico-trash" slot="startIcon"></span>
+                            </oj-button>
+                        </template>
+                    </oj-table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            For inline navigation to a different page give link instead of button
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-6">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-6">
+                <div class="oj-flex">
+                    <oj-table scroll-policy="loadMoreOnScroll" class="oj-flex-item oj-sm-12 oj-md-12"
+                        data="[[ employeeListADP ]]" columns='[{"headerText":"Id","field":"id"},{"headerText":"empNumber","field":"empNumber"},{"headerText":"empName","field":"empName"},
+                        {"headerText":"departmentNumber","field":"departmentNumber","template":"Action"}]'>
+                        <template slot="Action">
+                            <a target="_blank" class="oj-link">
+                                <oj-bind-text value="[[$current.row.departmentNumber]]"></oj-bind-text>
+                            </a>
+                        </template>
+                    </oj-table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            In Form Save Cancel buttons ( Don't give reset here ) as forms could be long and accidently clicking will
+            remove all data
+
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-7">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-7">
+                <div class="oj-flex">
+                    <div class="oj-flex-item oj-sm-12 oj-md-4">
+                        <oj-form-layout class="oj-formlayout-full-width" direction="row" label-edge="start" 
+                             user-assistance-density="compact">
+                            <oj-label-value  label-edge="start">
+                                <oj-label for="name-input" slot="label" >Name</oj-label>
+                                <oj-input-text id="name-input" slot="value"></oj-input-text>
+                            </oj-label-value>
+                            <oj-label-value  label-edge="start">
+                                <oj-label for="city-input" slot="label">City</oj-label>
+                                <oj-input-text id="city-input" slot="value" "></oj-input-text>
+                        </oj-label-value>
+                        <oj-button label=" Save" class="oj-button-sm oj-button-full-width">
+                                    <span class="oj-ux-ico-save" slot="startIcon"></span>
+                                    </oj-button>
+                                    <oj-button label="Cancel" class="oj-button-sm oj-button-full-width">
+                                        <span class="oj-ux-ico-close" slot="startIcon"></span>
+                                    </oj-button>
+                        </oj-form-layout>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            In Search ( Search, Reset, Cancel ) ( Reset should reset the form to how it is shown on page load )
+
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-8">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-7">
+                <div class="oj-flex">
+                    <div class="oj-flex-item oj-sm-12 oj-md-4">
+                        <oj-form-layout class="oj-formlayout-full-width" direction="row" label-edge="inside"
+                            user-assistance-density="compact" >
+                            <oj-label-value label-edge="start" label-width="35%">
+                                <oj-label for="name-input" slot="label">Name</oj-label>
+                                <oj-input-text id="name-input" slot="value"></oj-input-text>
+                            </oj-label-value>
+                            <oj-label-value label-edge="start" label-width="35%">
+                                <oj-label for="city-input" slot="label">City
+                                </oj-label>
+                                <oj-input-text id="city-input" slot="value"></oj-input-text>
+                            </oj-label-value>
+                            <oj-button label=" Search" class="oj-button-sm" chroming="callToAction">
+                                <span class="oj-ux-ico-search" slot="startIcon"></span>
+                            </oj-button>
+                            <oj-button label="Reset" class="oj-button-sm">
+                                <span class="oj-ux-ico-reset-variable" slot="startIcon"></span>
+                            </oj-button>
+                        </oj-form-layout>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="code-preview-section oj-sm-padding-4x-horizontal oj-sm-padding-4x-top">
+        <p class="heading">
+            Commonly used buttons and icons
+        </p>
+        <div class="heading ">
+            <p>
+                Source code
+            </p>
+            <div id="source-code-div-9">
+            </div>
+        </div>
+        <div class="heading">
+            <p>
+                Preview
+            </p>
+            <div id="live-code-div-7">
+
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-download"></span>
+                            </td>
+                            <td>
+                                Download
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-check"></span>
+                            </td>
+                            <td>
+                                Submit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-save"></span>
+                            </td>
+                            <td>
+                                Save
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-reset-variable"></span>
+                            </td>
+                            <td>
+                                Reset
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-close"></span>
+                            </td>
+                            <td>
+                                Clear
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-plus"></span>
+                            </td>
+                            <td>
+                                Add
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-edit"></span>
+                            </td>
+                            <td>
+                                Edit
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-trash"></span>
+                            </td>
+                            <td>
+                                Delete
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-upload"></span>
+                            </td>
+                            <td>
+                                Uplaod
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class="oj-ux-ico-view"></span>
+                            </td>
+                            <td>
+                                View
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+</div>

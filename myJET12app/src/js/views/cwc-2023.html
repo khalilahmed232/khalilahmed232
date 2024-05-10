@@ -1,0 +1,17 @@
+<div class="oj-flex">
+    <div class="oj-flex-item oj-sm-12 ">
+        <oj-data-grid id="datagrid" class="demo-data-grid" data="[[dataGridProvider]]" selection-mode.cell="multiple"
+            scroll-policy="loadMoreOnScroll" header.row.class-name="demo-data-grid-header-row"
+            header.column.resizable='{"width":"enable", "height":"enable"}'
+            header.row.resizable='{"width":"enable", "height":"enable"}'> </oj-data-grid>
+    </div>
+</div>
+
+
+<div class="oj-flex">
+    <div class="oj-flex-item oj-sm-12 ">
+        <oj-table data="[[dataprovider]]" columns='[{"headerText": "Country Id", "field": "id","id": "id"},
+            {"headerText": "Country Name", "field": "name","id": "name"}]'>
+        </oj-table>
+    </div>
+</div>

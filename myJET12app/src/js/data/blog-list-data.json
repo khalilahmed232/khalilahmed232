@@ -1,0 +1,109 @@
+{
+    "blogs": [
+        {
+            "id": 1,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/13/how-to-download-business-object-data-as-csv-file-in-visual-builder-cloud-service-vbcs/",
+            "heading": "How to download business object data as csv file in Visual Builder Cloud Service ( VBCS )",
+            "html": "Configure business object ( Ex: Country ) <br> Load data into business object <br> Add a download button. <br> On button click call rest API to fetch all data in business object using action chain. <br> Create CSV content as blob <br> Download blob file using JavaScript function <br>",
+            "live-app-url": ""
+        },
+        {
+            "id": 2,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/45/commonly-used-buttons-in-vbcs/",
+            "heading": "Commonly used Buttons in VBCS",
+            "html": "Button is element for user to interact. On button click we can call some rest API or show some message.",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=button"
+        },
+        {
+            "id": 3,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/81/to-show-loading-spinner-in-vbcs/",
+            "heading": "To show loading spinner in VBCS",
+            "html": "Users can add the following html code in designer to add a loading spinner in vbcs. <br> On button click they can call component ( #loading-dialog ) and select open method. <br> Now loading dialog is shown, they do some action and after action is completed, they can call component ( #loading-dialog ) and select close method. <br> Code for loading dialog. <br>",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=loading-dialog"
+        },
+        {
+            "id": 4,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/110/how-to-make-scroll-bar-thicker-in-vbcs-table-or-gird/",
+            "heading": "How to make scroll bar thicker in vbcs table or gird",
+            "html": "Based on the default redwood theme the table and grid scoll bar are very thin <br> User can update it by adding the following code in app.css in vbcs application. <br> width will increase the thickness of vertical scroll bar <br> height will increase the thickness of horizontal scroll bar. <br> Screenshot without additional css",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=thick-scrollbar"
+        },
+        {
+            "id": 5,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/57/delete-all-rows-from-business-object-using-groovy-in-vbcs/",
+            "heading": "Delete all rows from business object using groovy in vbcs",
+            "html": "Users can navigate to Business Objects ( BO ) -> Objects -> Select Object ( ex: Department or Employee ) -> Business Rules -> Object Function -> New Object Function. <br> In Object function we can write groovy code to do operations  <br> Groovy code to delete all rows in business object  <br> The following code will fetch all the data from a particular BO and delete it.  <br>",
+            "live-app-url": ""
+        },
+        {
+            "id": 6,
+            "blog-url": "https://khalil232.com/oracle-mft/47/how-to-rename-file-in-mft/",
+            "heading": "How to rename file in MFT",
+            "html": "In MFT, when file is moved from source to transfer, we can rename the file. <br> This will be useful in scenarios when the file name is different than what is expected <br> Sometime during decryption the extension is lost, we can add a different extension <br> Sometimes we have to append a source to handle files from different sources differently <br> We can use RenameRegExp to rename the file <br> This uses same method as java replace. The input is Regular expression <br> Common use cases and examples <br>",
+            "live-app-url": ""
+        },
+        {
+            "id": 7,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/59/validations-in-groovy-for-business-object/",
+            "heading": "Validations in groovy for business object",
+            "html": "We can write simple or complex validations at business objects level in groovy <br> In some cases we want to check if age > 18. <br> In some case we want to check for the object row the status is approved then no changes should happen. <br> In some cases we want to allow only the same user to edit the record. <br> In some case we want to validate using some external API ( to check availability of quantity or price ). <br> For all these we can use validations using groovy. <br> General idea is to create a object function using groovy to validate and use this object function in before insert trigger or before update trigger. <br> Let us say we have a Business Object Employee with fields (id, first name, last name, age) and we want to have validation that age should be at least 18 years. <br>",
+            "live-app-url": ""
+        },
+        {
+            "id": 8,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/160/format-number-in-vbcs-page-using-functions/",
+            "heading": "Format number in VBCS page using functions",
+            "html": "You can use oj-input-number tag for showing formatted number and use convertor options<br><br>  But when using above component only for read-only purpose to show some values in grid or table, it doesn’t make sense to use input fields.<br>  <br>  Instead we can use oj-bind-text field and pass data using following javascript function.<br>  <br>  The JavaScript function will add necessary formatting to the number and return the value as string.<br>  <br>  We can use number convertor functions to format the number in required format",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=number-format-sample"
+        },
+        {
+            "id": 9,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/171/when-to-use-grid-or-table-or-for-each-in-vbcs/",
+            "heading": "When to use grid or table or for each in VBCS",
+            "html": "While showing collections, we can use oj-table or oj-data-grid or we can use oj-for-each to display multiple values<br><br>  When we show some data which comes in API, and we don’t have to much grouping and all we can show as table<br>  <br>  If the data has few actions like approve or to update few columns like Quantity or Price or has some links to open in a page to view some more data or link to download some data we can use table<br>  <br>  When we want to have a screen with large amount of data, where user will add multiple rows, edit like a excel instead of table we can use data grid. Data grid has better edit support than editable table. It is easy to handle edit events on data grid.<br>  <br>  If we want to show summary based on some columns, like we are showing crick players information like number of sixes or total number of runs scored or total wickets taken per team, we can have player records and team records to show total. This will be better achieved with grid.<br>  <br>  If we want to show People like data with images or some products like shirts, cars or something else where having a different look and feel, than table helps.",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=collections-view-option"
+        },
+        {
+            "id": 10,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/174/how-to-handle-large-text-in-table-or-grid/",
+            "heading": "How to handle large text in table or grid",
+            "html": "We can set for the column, so that it doesn’t expand.<br><br>  e.g.: In this for Address we can give max-width as 200px<br>  <br>  This will show the text up to 200px and later it is show as … This is similar to text-overflow: ellipsis; css code<br>  <br>  ",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=table-long-text"
+        },
+        {
+            "id": 11,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/183/calling-rest-api-using-javascript-function-in-vbcs/",
+            "heading": "Calling Rest API using JavaScript function in vbcs",
+            "html": "We can call rest API configured in service connection using RestHelper<br><br>  The function getLineItems() can be called using action chain.<br>  <br><br>  We can call the rest API configured in the service connection using Rest Helper in APP UI as well<br><br>We have to additional pass extensionId – site_MyExtension. ( id of the APP UI extension.<br><br>You can find the extension id from -><br><br>Open workspace, click on extension name in left hand side<br>Go to settings and you will find extension id.<br>  <br>  ",
+            "live-app-url": ""
+        },
+        {
+            "id": 12,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/209/how-to-refresh-particular-cell-in-oj-data-grid/",
+            "heading": "How to refresh particular cell in oj-data-grid",
+            "html": "We can use the update event to refresh particular grid cells.<br><br>  Let us say we are displaying a grid with few rows where the user can edit the data and we are showing few calculated fields (like total or percentage). If we have to refresh the grid cells after updating the cell with the correct value, we can use the following JavaScript code: <br>",
+            "live-app-url": ""
+        },
+        {
+            "id": 13,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/212/how-to-enable-resize-in-oj-data-grid/",
+            "heading": "How to enable resize in oj-data-grid",
+            "html": "We can enable resize in oj-data-grid by adding the following html code to :<br><br>  The following attributes on the header will allow resizing. When hovering on a border, the user can resize the row or column height or width.<br><br><br>  To add an additional right-click menu, we can add the below code. The user can right-click and click on Resize width, and enter a desired width, like 100 or 200.<br>  ",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=data-grid-example"
+        },
+        {
+            "id": 14,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/217/how-to-have-different-colors-on-rows-based-on-one-field-in-row-in-oj-data-grid/",
+            "heading": "How to have different colors on rows based on one field in row in oj-data-grid",
+            "html": "On a data grid, we can use a function in the cell.class-name attribute to dynamically pass the class name based on row data.<br><br>  “cellContext” will contain the required information. We can use console.log() to identify the structure.<br>  <br>  This can be used for other attributes, like “header.column.class-name” as well on oj-data-grid<br>  <br>  This can be used when we want show different style for different rows, like<br>  <br>  If we want to highlight top performer in a data set,<br>  or differently show calculated fields<br>  or if we want to show different type with a different color<br>  Sample HTML code:<br>",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=data-grid-example"
+        },
+        {
+            "id": 15,
+            "blog-url": "https://khalil232.com/vbcs-tutorials/241/format-dates-in-vbcs-page-using-functions/",
+            "heading": "Format dates in VBCS page using functions",
+            "html": "You can use oj-input-date or oj-input-date-time components for showing formatted date and use convertor options <br> But when using above component only for read-only purpose to show some values in grid or table, it doesn’t make sense to use input fields.  <br> Instead we can use oj-bind-text field and pass data using following JavaScript function.  <br> The JavaScript function will add necessary formatting to the date and return the value as string.",
+            "live-app-url": "https://khalil232.com/apps/ojet-apps/?ojr=date-format-sample"
+        }
+    ]
+}

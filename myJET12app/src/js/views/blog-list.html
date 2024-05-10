@@ -1,0 +1,40 @@
+<div class="oj-hybrid-padding">
+    <div class="oj-flex">
+
+        <oj-table class="custom-blog-list-table" id="bloglist" scroll-policy="loadMoreOnScroll"
+            class="oj-flex-item oj-sm-12 oj-md-12" data="[[ employeeListADP ]]" columns='[
+            {"headerText":"Id","field":"id","width": 50 ,"className": "custom-helper-vertical-align-top"},
+            {"headerText":"Heading","field":"heading", "width": 200, "template": "headingTemplate","className": "custom-helper-vertical-align-top"},
+            {"headerText":"Blog URL","field":"blog-url" , "width": 200, "template": "blogUrlTemplate", "className": "custom-helper-vertical-align-top"},
+            {"headerText":"Blog content","field":"html" , "width": 200, "template": "blogContentHtmlTemplate"},
+            {"headerText":"Live APP URL","field":"live-app-url", "width": 200 ,"className": "custom-helper-vertical-align-top", "template": "liveAppUrlTemplate"}
+            ]'>
+
+            <template slot="headingTemplate">
+                <div class="oj-helper-overflow-wrap-anywhere oj-helper-white-space-normal oj-helper-text-align-start">
+                    <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+                </div>
+            </template>
+
+            <template slot="blogUrlTemplate">
+                <a :href="[[ $current.data ]]" class="oj-helper-overflow-wrap-anywhere oj-helper-white-space-normal">
+                    <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+                </a>
+            </template>
+
+            <template slot="blogContentHtmlTemplate">
+                <div class="oj-helper-overflow-wrap-anywhere oj-helper-white-space-normal">
+                    <oj-bind-dom config="{{ getConfigForDOM($current.data) }}"></oj-bind-dom>
+                </div>
+            </template>
+
+            <template slot="liveAppUrlTemplate">
+                <a :href="[[ $current.data ]]" class="oj-helper-overflow-wrap-anywhere oj-helper-white-space-normal">
+                    <oj-bind-text value="[[ $current.data ]]"></oj-bind-text>
+                </a>
+            </template>
+
+        </oj-table>
+
+    </div>
+</div>

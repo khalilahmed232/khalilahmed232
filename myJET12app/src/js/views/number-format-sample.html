@@ -1,0 +1,38 @@
+<div class="oj-hybrid-padding">
+    <div class="oj-flex">
+        <div class="oj-flex-item pj-sm-12">
+            <oj-form-layout columns="3">
+
+                <oj-label for="configTextArea">Convertor Config</oj-label>
+                <oj-text-area id="configTextArea" value="{{ config }}" raw-value="{{ configRawValue }}" rows=10>
+                </oj-text-area>
+
+                <oj-label for="amountId">
+                    Enter number to be formatted
+                </oj-label>
+                <oj-input-text id="amountId" value="{{ amount }}" raw-value="{{ amountRawValue }}">
+                </oj-input-text>
+
+                <oj-label for="amountFormattedId">
+                    Formatted Number
+                </oj-label>
+                <oj-input-text id="amountFormattedId" value="{{ amountFormatted }}" readonly="true">
+                </oj-input-text>
+
+                <oj-label-value colspan="1">
+
+                </oj-label-value>
+                <oj-label for="configTextArea">List of numbers to be converted</oj-label>
+                <oj-text-area id="configTextArea" value="{{ listOfNumbers }}" raw-value="{{ listOfNumbersRawValue }}" rows=10>
+                </oj-text-area>
+
+                <oj-label for="configTextArea">List of formatted numbers</oj-label>
+                <oj-text-area id="configTextArea" readonly="true" 
+                    value="{{ listOfNumFormatted }}"  rows=10>
+                </oj-text-area>
+
+
+            </oj-form-layout>
+        </div>
+    </div>
+  </div>

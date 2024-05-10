@@ -1,0 +1,102 @@
+{
+    "AppointmentsType": [
+        {
+            "id": 1,
+            "shortName": "R",
+            "name": "Ready",
+            "color": "blue"
+        },
+        {
+            "id": 2,
+            "shortName": "M",
+            "name": "Maintenance",
+            "color": "orange"
+        },
+        {
+            "id": 3,
+            "shortName": "G",
+            "name": "Good",
+            "color": "orange"
+        }
+    ],
+    "Persons": [
+        {
+            "id": 1,
+            "first_name": "Heriberto"
+        },
+        {
+            "id": 2,
+            "first_name": "Sibylla"
+        },
+        {
+            "id": 3,
+            "first_name": "Cristiano"
+        },
+        {
+            "id": 4,
+            "first_name": "Mano"
+        },
+        {
+            "id": 5,
+            "first_name": "Roanna"
+        },
+        {
+            "id": 6,
+            "first_name": "Paloma"
+        },
+        {
+            "id": 7,
+            "first_name": "Kitty"
+        },
+        {
+            "id": 8,
+            "first_name": "Melli"
+        },
+        {
+            "id": 9,
+            "first_name": "Grove"
+        },
+        {
+            "id": 10,
+            "first_name": "Eolanda"
+        }
+    ],
+    "Appointments": [
+        {
+            "person_id": 1,
+            "appointment_type_id": 2,
+            "startDateTime": "2023-12-15T08:00:00.000Z",
+            "endDateTime": "2023-12-15T09:00:00.000Z"
+        },
+        {
+            "person_id": 1,
+            "appointment_type_id": 3,
+            "startDateTime": "2023-12-15T09:00:00.000Z",
+            "endDateTime": "2023-12-15T10:00:00.000Z"
+        },
+        {
+            "person_id": 2,
+            "appointment_type_id": 2,
+            "startDateTime": "2023-12-15T08:00:00.000Z",
+            "endDateTime": "2023-12-15T09:00:00.000Z"
+        },
+        {
+            "person_id": 2,
+            "appointment_type_id": 3,
+            "startDateTime": "2023-12-16T09:00:00.000Z",
+            "endDateTime": "2023-12-16T10:00:00.000Z"
+        },
+        {
+            "person_id": 3,
+            "appointment_type_id": 2,
+            "startDateTime": "2023-12-17T08:00:00.000Z",
+            "endDateTime": "2023-12-17T09:00:00.000Z"
+        },
+        {
+            "person_id": 3,
+            "appointment_type_id": 3,
+            "startDateTime": "2023-12-17T09:00:00.000Z",
+            "endDateTime": "2023-12-17T10:00:00.000Z"
+        }
+    ]
+}

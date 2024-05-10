@@ -1,0 +1,54 @@
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 ">
+
+    Filters
+    <table class="custom-filter-table">
+      <tr>
+        <td>Project</td>
+        <td>Project Type</td>
+        <td>Appointment Type</td>
+        <td>View</td>
+        <td></td>
+        <td>Year</td>
+        <td>Month</td>
+        <td>Week</td>
+      </tr>
+      <tr>
+        <td>Project A</td>
+        <td>Project Type 1</td>
+        <td>Maintenance</td>
+        <td>
+          <oj-select-single 
+            aria-label="view-type"
+            data="{{viewTypeADP}}" 
+            item-text="display"
+            value="{{viewType}}" 
+            on-oj-value-action="[[ generateColumnHeaders ]]">
+        </oj-select-single></td>
+        <td></td>
+        <td>2024</td>
+        <td>Jun</td>
+        <td>2-Jun</td>
+      </tr>
+    </table>
+
+
+    <oj-bind-text value="{{printMessage}}"></oj-bind-text>
+    <oj-bind-text value="{{ columnHeaders }}"></oj-bind-text>
+
+
+    <h5>Data grid</h5>
+    <oj-data-grid id="datagrid" style="width:100%;height:400px" aria-label="My Data Grid" data='{{ salaryDataADP }}'
+      header.column.style="[[ headerColStyle ]]" header.column.resizable.width="enable"
+      header.column.resizable.height="enable" header.row.resizable.width="enable" header.row.resizable.height="enable"
+      header.column.class-name="oj-helper-justify-content-flex-start" cell.class-name="[[ cellClassNameFunc ]]"
+      cell.style="width: 200px;">
+      <oj-menu slot="contextMenu" aria-label="Employee Edit">
+        <oj-option id="resizeWidth" value="Resize Width" data-oj-command="oj-datagrid-resizeWidth"></oj-option>
+        <oj-option id="resizeHeight" value="Resize Height" data-oj-command="oj-datagrid-resizeHeight"></oj-option>
+        <oj-option id="resizeFitToContent" value="Resize Fit To Content"
+          data-oj-command="oj-datagrid-resizeFitToContent"></oj-option>
+      </oj-menu>
+    </oj-data-grid>
+  </div>
+</div>

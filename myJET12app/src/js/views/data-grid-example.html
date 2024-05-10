@@ -1,0 +1,17 @@
+<div class="oj-flex">
+  <div class="oj-flex-item oj-sm-12 ">
+    <h5>Data grid</h5>
+    <oj-data-grid id="datagrid" style="width:100%;height:400px" aria-label="My Data Grid" data='{{ salaryDataADP }}'
+      header.column.style="[[ headerColStyle ]]" header.column.resizable.width="enable"
+      header.column.resizable.height="enable" header.row.resizable.width="enable" header.row.resizable.height="enable"
+      header.column.class-name="oj-helper-justify-content-flex-start" cell.class-name="[[ cellClassNameFunc ]]"
+      cell.style="width: 200px;">
+      <oj-menu slot="contextMenu" aria-label="Employee Edit">
+        <oj-option id="resizeWidth" value="Resize Width" data-oj-command="oj-datagrid-resizeWidth"></oj-option>
+        <oj-option id="resizeHeight" value="Resize Height" data-oj-command="oj-datagrid-resizeHeight"></oj-option>
+        <oj-option id="resizeFitToContent" value="Resize Fit To Content"
+          data-oj-command="oj-datagrid-resizeFitToContent"></oj-option>
+      </oj-menu>
+    </oj-data-grid>
+  </div>
+</div>

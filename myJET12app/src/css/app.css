@@ -1,0 +1,165 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+html {
+  height: 100vh;
+}
+
+.sendOffScreen {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.demo-oracle-icon {
+  width: 137px;
+  height: 18px;
+}
+
+.demo-oracle-icon:before {
+  content: url("images/oracle_logo.svg");
+}
+
+html:not([dir="rtl"]) .demo-oracle-icon {
+  padding-right: 4px;
+}
+
+html[dir="rtl"] .demo-oracle-icon {
+  padding-left: 4px;
+}
+
+.demo-oracle-icon:before {
+  display: inline;
+}
+
+.demo-appheader-avatar {
+  width: 24px;
+  height: 24px;
+}
+
+.demo-appheader-avatar:before {
+  content: url("images/avatar_24px.png");
+}
+@media (-webkit-min-device-pixel-ratio: 1.5),
+  (min-resolution: 144dpi),
+  (min-resolution: 1.5dppx) {
+  .demo-appheader-avatar:before {
+    content: url("images/avatar_24px_2x.png");
+    -webkit-transform: translate(-25%, -25%) scale(0.5);
+    transform: translate(-25%, -25%) scale(0.5);
+  }
+}
+
+.code-preview-section {
+  border: 1px solid black;
+  margin: 40px 0;
+}
+
+.code-preview-section .heading {
+  border: 1px solid black;
+  border-left: 2.5px solid black;
+  padding: 15px;
+  font-weight: bold;
+  margin: 0px 0px 20px;
+}
+
+/* .oj-web-applayout-header-title {
+  font-size: larger;
+  font-weight: bolder;
+} */
+
+#employeetable::-webkit-scrollbar-track {
+  border-radius: 15px;
+  background-color: #e9e9e9;
+}
+
+#employeetable ::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #e9e9e9;
+}
+#employeetable ::-webkit-scrollbar-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: #7b7d7f;
+}
+.custom-table {
+  height: 300px;
+  width: 100%;
+}
+
+.inventory-item-img-class {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.user-div-container {
+  display: flex;
+  border: 2px solid red;
+}
+.user-div {
+  border: 1px solid black;
+}
+
+.user-div .user-name-initial {
+  color: white;
+  font-size: 40px;
+}
+
+.user-div .user-name {
+  font-weight: 900;
+}
+
+.user-div .user-profile-pic {
+  --profile-pic-height: 60px;
+  border: 1px solid black;
+  margin: 20px;
+  height: var(--profile-pic-height);
+  width: var(--profile-pic-height);
+  border-radius: var(--profile-pic-height);
+  background-color: #6fb1c6;
+}
+
+/* .oj-datagrid-cell {
+  justify-content: start;
+} */
+
+.custom-filter-table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.custom-filter-table tr,
+.custom-filter-table td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.custom-filter-table td:nth-child(4) {
+  min-width: 200px;
+}
+
+.custom-helper-vertical-align-top {
+  vertical-align: top;
+}
+
+.custom-blog-list-table {
+  height: 100%;
+  width: 100%;
+}
+
+.custom-style-nav-link {
+  border: 2px solid #1e73be;
+  padding: 10px;
+  color: #1e73be;
+  margin: 10px;
+}

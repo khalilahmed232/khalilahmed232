@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <script src='https://unpkg.com/@yaireo/relative-time'></script> -->
+    <script src="external-library/relative-time/relative-time.min.js"></script>
+    <script src="date-time-ago.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="dateTimeAgoPageLoadFn()">
+    <nav>
+        <a href="http://khalil232.com">Back to main site</a>
+    </nav>
+
+
+    <textarea name="" id="dates-input-textarea" cols="30" rows="10" onchange="textAreaChangeFn(this)"></textarea>
+
+    <button onclick="refreshTable()">Refresh Table </button>
+
+    <table id="dates-table"></table>
+</body>
+
+</html>

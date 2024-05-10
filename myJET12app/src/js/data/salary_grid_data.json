@@ -1,0 +1,204 @@
+{
+    "salaries": [
+        {
+            "id": 1,
+            "first_name": "Odell",
+            "last_name": "Grimestone",
+            "role": "Construction Manager",
+            "salary": 449182.96,
+            "city": "Mumbai"
+        },
+        {
+            "id": 2,
+            "first_name": "Lolly",
+            "last_name": "Matissoff",
+            "role": "Electrician",
+            "salary": 594213.18,
+            "city": "Hyderabad"
+        },
+        {
+            "id": 3,
+            "first_name": "Rusty",
+            "last_name": "Houtbie",
+            "role": "Electrician",
+            "salary": 393116.48,
+            "city": "Banglore"
+        },
+        {
+            "id": 4,
+            "first_name": "Larissa",
+            "last_name": "Cucinotta",
+            "role": "Construction Worker",
+            "salary": 221190.42,
+            "city": "Delhi"
+        },
+        {
+            "id": 5,
+            "first_name": "Zsazsa",
+            "last_name": "Palfery",
+            "role": "Subcontractor",
+            "salary": 567392.17,
+            "city": "Banglore"
+        },
+        {
+            "id": 6,
+            "first_name": "Adina",
+            "last_name": "McDirmid",
+            "role": "Project Manager",
+            "salary": 130519.58,
+            "city": "Hyderabad"
+        },
+        {
+            "id": 7,
+            "first_name": "Nellie",
+            "last_name": "Faughnan",
+            "role": "Estimator",
+            "salary": 165198.42,
+            "city": "Mumbai"
+        },
+        {
+            "id": 8,
+            "first_name": "Neda",
+            "last_name": "Sheran",
+            "role": "Subcontractor",
+            "salary": 165329.94,
+            "city": "Kolkata"
+        },
+        {
+            "id": 9,
+            "first_name": "Davy",
+            "last_name": "McLanachan",
+            "role": "Architect",
+            "salary": 290855.95,
+            "city": "Delhi"
+        },
+        {
+            "id": 10,
+            "first_name": "Leo",
+            "last_name": "Greggs",
+            "role": "Architect",
+            "salary": 590489.29,
+            "city": "Banglore"
+        },
+        {
+            "id": 11,
+            "first_name": "Mala",
+            "last_name": "Oylett",
+            "role": "Surveyor",
+            "salary": 515620.52,
+            "city": "Mumbai"
+        },
+        {
+            "id": 12,
+            "first_name": "Merill",
+            "last_name": "Coronas",
+            "role": "Surveyor",
+            "salary": 213162.67,
+            "city": "Banglore"
+        },
+        {
+            "id": 13,
+            "first_name": "Magda",
+            "last_name": "Simonelli",
+            "role": "Estimator",
+            "salary": 195673.01,
+            "city": "Hyderabad"
+        },
+        {
+            "id": 14,
+            "first_name": "Skip",
+            "last_name": "Cox",
+            "role": "Construction Manager",
+            "salary": 599130.47,
+            "city": "Delhi"
+        },
+        {
+            "id": 15,
+            "first_name": "Brana",
+            "last_name": "Boarder",
+            "role": "Electrician",
+            "salary": 686703.34,
+            "city": "Kolkata"
+        },
+        {
+            "id": 16,
+            "first_name": "Keriann",
+            "last_name": "Poley",
+            "role": "Project Manager",
+            "salary": 490151.29,
+            "city": "Nagpur"
+        },
+        {
+            "id": 17,
+            "first_name": "Marys",
+            "last_name": "Biever",
+            "role": "Project Manager",
+            "salary": 749858.6,
+            "city": "Hyderabad"
+        },
+        {
+            "id": 18,
+            "first_name": "Dottie",
+            "last_name": "Chittock",
+            "role": "Project Manager",
+            "salary": 581444.55,
+            "city": "Delhi"
+        },
+        {
+            "id": 19,
+            "first_name": "Cristin",
+            "last_name": "Frosch",
+            "role": "Subcontractor",
+            "salary": 143628.37,
+            "city": "Mumbai"
+        },
+        {
+            "id": 20,
+            "first_name": "Odilia",
+            "last_name": "Brockelsby",
+            "role": "Estimator",
+            "salary": 492406.97,
+            "city": "Banglore"
+        },
+        {
+            "id": 21,
+            "first_name": "Kissiah",
+            "last_name": "Pude",
+            "role": "Subcontractor",
+            "salary": 731078.51,
+            "city": "Kolkata"
+        },
+        {
+            "id": 22,
+            "first_name": "Parke",
+            "last_name": "Cable",
+            "role": "Supervisor",
+            "salary": 660947.08,
+            "city": "Delhi"
+        },
+        {
+            "id": 23,
+            "first_name": "Nevins",
+            "last_name": "Kenforth",
+            "role": "Supervisor",
+            "salary": 319954.17,
+            "city": "Mumbai"
+        },
+        {
+            "id": 24,
+            "first_name": "Borg",
+            "last_name": "Luscott",
+            "role": "Construction Expeditor",
+            "salary": 633160.82,
+            "city": "Hyderabad"
+        },
+        {
+            "id": 25,
+            "first_name": "Saba",
+            "last_name": "Fairbairn",
+            "role": "Project Manager",
+            "salary": 879089.92,
+            "city": "Kolkata"
+        }
+    ]
+}
